@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1;200;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+
+body{
+    background: url(Gr.png)no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+.container{
+    color: whitesmoke;
+    width: 400px;
+    height: 900px;
+    border-radius: 27px;
+
+    background: linear-gradient(
+        135deg,
+        rgb(180, 129, 134) 0%,
+        rgb(73, 69, 86) 100%
+    );
+
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgb(from color r g b);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.inpc{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    }
+.input{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+input{
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    opacity: 0.5;
+    background: linear-gradient(
+        135deg
+        rgb(180, 129, 134) 0%,
+        rgb(73, 69, 86) 100%
+    );
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.for{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background:rgb(73, 69, 86);
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color:rgb(180, 129, 134) ;
+ }
+ .btn1{
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background:rgb(180, 129, 134);
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.btn1:hover{
+    background-color:rgb(180, 129, 134) ;
+ }
+a{
+    color: antiquewhite;
+    text-decoration: none;
+}

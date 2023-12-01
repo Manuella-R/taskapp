@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskapp home</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo">To provide Support</h2>
+
+          <ul class="menu_items">
+            <img src="imageshtml/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="Readmore.html" class="nav_link">About us</a></li>
+            <li><a href="login.php" class="nav_link">Login</a></li>
+            <li><a href="register1.php" class="nav_link">Sign up</a></li>
+          </ul>
+          <img src="imageshtml/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Best Website to help <br /> keep track of your activities</h2>
+            <p>Life can often feel like a whirlwind of responsibilities, tasks, and unexpected challenges. It's easy to get overwhelmed and </br> feel as though we should be able to navigate it all </br> effortlessly. However, the truth is,</br> it's perfectly okay to seek support, and sometimes that support </br> comes in the form of tools designed to help us stay organized.</p>
+            <div class="buttons">
+              <button onclick="goToReadMore()"class="btn">Read More</button>
+              <button onclick="Login()" class="btn">Login</button>
+            </div>
+          </div>
+          <div class="column">
+        
+          </div>
+        </div>
+        
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+
+      function goToReadMore() {
+            // Redirect to Readmore.html
+            window.location.href = 'Readmore.html';
+        }
+
+        function Login() {
+            // Redirect to Readmore.html
+            window.location.href = 'login.php';
+        }
+    </script>
+  </body>
+</html>

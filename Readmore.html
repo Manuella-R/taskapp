@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why we do this</title>
+    <link rel="stylesheet" href="css/Readmore.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+        
+
+      </header>
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Best Website to help <br /> keep track of your activities</h2>
+            <p>Life can often feel like a whirlwind of responsibilities, tasks, and unexpected challenges. It's easy to get overwhelmed and </br> feel as though we should be able to navigate it all </br> effortlessly. However, the truth is,</br> it's perfectly okay to seek support, and sometimes that support </br> comes in the form of tools designed to help us stay organized.</br>
+                In the grand tapestry of existence, these tools serve as our trusted companions, guiding us through the chaos and ensuring that no thread is left unattended. They are not a testament to our inability to handle life's complexities but rather a recognition of our commitment to living intentionally.
+            </br>
+                Just as a skilled artist uses brushes to create a masterpiece or a musician relies on sheet music to compose a symphony, utilizing an organizer or task manager is an art in itself. It is a skill that enables us to transform chaos into harmony, to turn the ordinary into extraordinary.
+            </br>
+                Let us celebrate not only the passage of time but also the wisdom in recognizing when we need a little extra support. Life is a grand collaboration, and sometimes the most beautiful creations emerge when we acknowledge and embrace the tools that can make the journey a bit smoother.</br></p>
+            <div class="buttons">
+              <button  onclick="Home()" class="btn">Homepage</button>
+              <button   onclick="register()" class="btn">Sign up</button>
+            </div>
+          </div>
+          <div class="column">
+        
+          </div>
+        </div>
+        
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+
+      function Home() {
+            // Redirect to Readmore.html
+            window.location.href = 'index.html';
+        }
+        function register() {
+            // Redirect to Readmore.html
+            window.location.href = 'register1.php';
+        }
+    </script>
+  </body>
+</html>
